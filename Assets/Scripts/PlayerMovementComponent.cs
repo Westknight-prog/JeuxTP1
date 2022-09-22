@@ -6,10 +6,9 @@ using UnityEngine.InputSystem;
 public class PlayerMovementComponent : MonoBehaviour
 {
     ActionMap actionMap;
-    [SerializeField] int vitesse = 10;
+    [SerializeField] float vitesse = 10f;
     [SerializeField] int jumpHeight = 10;
 
-    [SerializeField] Transform exitLocation;
     Ray ray;
 
     // Start is called before the first frame update
@@ -17,7 +16,6 @@ public class PlayerMovementComponent : MonoBehaviour
     {
         actionMap = new ActionMap();
         actionMap.PlayerMovement.Enable();
-        actionMap.Interraction.Enable();
     }
 
     // Update is called once per frame
@@ -38,6 +36,14 @@ public class PlayerMovementComponent : MonoBehaviour
         if (actionMap.PlayerMovement.Left.IsPressed())
         {
             transform.Translate(Vector3.left * Time.deltaTime * vitesse);
+        }
+        if (actionMap.PlayerMovement.Run.WasPressedThisFrame())
+        {
+            vitesse *= 1.5f;
+        }
+        if (actionMap.PlayerMovement.Run.WasReleasedThisFrame())
+        {
+            vitesse /= 1.5f;
         }
         if (actionMap.PlayerMovement.Jump.triggered)
         {
