@@ -49,7 +49,7 @@ public class PlayerMovementComponent : MonoBehaviour
         {
             if(Grounded())
             {
-                transform.Translate(new Vector3(0, jumpHeight, 0) * Time.deltaTime);
+                GetComponent<Rigidbody>().AddForce(Vector3.up * jumpHeight);
             }
                 
         }
