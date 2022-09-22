@@ -15,6 +15,7 @@ public class CatchedComponent : MonoBehaviour
     {
         if(collision.gameObject.name == "EnemySlim" || collision.gameObject.name == "EnemyFat")
         {
+            Cursor.lockState = CursorLockMode.None;
             SceneManager.LoadScene("EndScene");
         }
     }
