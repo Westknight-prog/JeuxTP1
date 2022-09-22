@@ -45,9 +45,24 @@ public class PlayerMovementComponent : MonoBehaviour
         {
             vitesse /= 1.5f;
         }
-        if (actionMap.PlayerMovement.Jump.triggered)
+        if (actionMap.PlayerMovement.Jump.IsPressed())
         {
-            transform.Translate(new Vector3(0, jumpHeight, 0) * Time.deltaTime);
+            if(Grounded())
+            {
+                transform.Translate(new Vector3(0, jumpHeight, 0) * Time.deltaTime);
+            }
+                
+        }
+
+        bool Grounded()
+        {
+            RaycastHit hit;
+            Ray landingRay = new Ray(transform.position, Vector3.down);
+
+            if (Physics.Raycast(landingRay, out hit, 2f))
+                return true;
+            else
+                return false;
         }
     }
 }
