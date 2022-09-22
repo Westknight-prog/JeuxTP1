@@ -15,7 +15,6 @@ public class PlayerMovementComponent : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Rigidbody rigidbody;
         actionMap = new ActionMap();
         actionMap.PlayerMovement.Enable();
         actionMap.Interraction.Enable();
@@ -42,7 +41,7 @@ public class PlayerMovementComponent : MonoBehaviour
         }
         if (actionMap.PlayerMovement.Jump.triggered)
         {
-            rigidbody.AddForce(transform.up * jumpHeight);
+            transform.Translate(new Vector3(0, jumpHeight, 0) * Time.deltaTime);
         }
     }
 }

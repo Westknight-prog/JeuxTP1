@@ -185,7 +185,7 @@ public partial class @ActionMap : IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""22899d45-8f4b-4179-b5b9-5c353a099654"",
-                    ""path"": ""<Keyboard>/enter"",
+                    ""path"": ""<Keyboard>/space"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
