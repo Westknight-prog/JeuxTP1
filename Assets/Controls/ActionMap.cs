@@ -28,54 +28,27 @@ public partial class @ActionMap : IInputActionCollection2, IDisposable
             ""id"": ""a45296bb-e789-491d-8f92-1d842d9d66f5"",
             ""actions"": [
                 {
-                    ""name"": ""Right"",
-                    ""type"": ""Button"",
-                    ""id"": ""d4710b1e-6ba5-40b9-9b3b-3d07d32794a1"",
-                    ""expectedControlType"": ""Button"",
+                    ""name"": ""Jump"",
+                    ""type"": ""Value"",
+                    ""id"": ""79510afd-6ba2-41bc-a8f5-af033cd0914a"",
+                    ""expectedControlType"": ""Vector3"",
                     ""processors"": """",
                     ""interactions"": """",
-                    ""initialStateCheck"": false
+                    ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""Left"",
-                    ""type"": ""Button"",
-                    ""id"": ""8c9b0eee-0f19-4ede-8583-8d0a2c925841"",
-                    ""expectedControlType"": ""Button"",
+                    ""name"": ""WASD"",
+                    ""type"": ""Value"",
+                    ""id"": ""b754ae19-1828-4a56-abe7-ed238ef85109"",
+                    ""expectedControlType"": ""Vector3"",
                     ""processors"": """",
                     ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Forward"",
-                    ""type"": ""Button"",
-                    ""id"": ""b46b9f00-8d8f-488b-b1c1-c621ec0c447a"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Backward"",
-                    ""type"": ""Button"",
-                    ""id"": ""5c5e9332-94c1-45d0-a6a9-5b493459c895"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
+                    ""initialStateCheck"": true
                 },
                 {
                     ""name"": ""Run"",
                     ""type"": ""Button"",
-                    ""id"": ""5833db5b-4fd1-42cc-bde8-3ee410948b65"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Jump"",
-                    ""type"": ""Button"",
-                    ""id"": ""79510afd-6ba2-41bc-a8f5-af033cd0914a"",
+                    ""id"": ""bd0c25fa-3d34-4929-9813-127833eee568"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -85,111 +58,100 @@ public partial class @ActionMap : IInputActionCollection2, IDisposable
             ""bindings"": [
                 {
                     ""name"": """",
-                    ""id"": ""4b984bda-0ab5-4ac8-8666-7f3ddea81854"",
-                    ""path"": ""<Keyboard>/d"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Right"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""4ee52132-1d60-4c6b-8adb-10525e2cc121"",
-                    ""path"": ""<Keyboard>/rightArrow"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Right"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""c552b072-4bf5-4b2b-97f1-668164dd8509"",
-                    ""path"": ""<Keyboard>/a"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Left"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""6d52de3d-c2db-48f0-bd8b-2cd34259d999"",
-                    ""path"": ""<Keyboard>/leftArrow"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Left"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""b6181915-cd58-4915-a35b-378a6d017380"",
-                    ""path"": ""<Keyboard>/w"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Forward"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""a8198b24-a488-4de8-afce-9f563d7f9883"",
-                    ""path"": ""<Keyboard>/upArrow"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Forward"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""f7dca35c-b11f-4646-9b93-5f82c953f8ed"",
-                    ""path"": ""<Keyboard>/s"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Backward"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""d582d5b8-d55c-45da-8f90-069e7a876eae"",
-                    ""path"": ""<Keyboard>/downArrow"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Backward"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""ae0990d6-10e2-4a96-8ae3-dfe227c1fb02"",
-                    ""path"": ""<Keyboard>/shift"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Run"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""22899d45-8f4b-4179-b5b9-5c353a099654"",
                     ""path"": ""<Keyboard>/space"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""3D Vector"",
+                    ""id"": ""28529fda-552b-4579-b758-4338352adb1f"",
+                    ""path"": ""3DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""WASD"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""54da6123-94e6-491f-af53-e658a4d68aee"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""WASD"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""4ff22d19-8f9b-4947-ac69-ed72a18a01b3"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""WASD"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""8bc82bd8-7595-4771-8552-debc07043dbc"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""WASD"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""2f3b749a-839d-4fd5-85bd-c1b8147fd267"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""WASD"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""forward"",
+                    ""id"": ""88913c25-2a71-48c6-90f9-b221762c8601"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""WASD"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""backward"",
+                    ""id"": ""0ee2585e-2e7e-427f-aaa6-c26179add606"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""WASD"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2a93b16f-99e6-4be0-bf03-2abb2e05a462"",
+                    ""path"": ""<Keyboard>/shift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Run"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -228,12 +190,9 @@ public partial class @ActionMap : IInputActionCollection2, IDisposable
 }");
         // PlayerMovement
         m_PlayerMovement = asset.FindActionMap("PlayerMovement", throwIfNotFound: true);
-        m_PlayerMovement_Right = m_PlayerMovement.FindAction("Right", throwIfNotFound: true);
-        m_PlayerMovement_Left = m_PlayerMovement.FindAction("Left", throwIfNotFound: true);
-        m_PlayerMovement_Forward = m_PlayerMovement.FindAction("Forward", throwIfNotFound: true);
-        m_PlayerMovement_Backward = m_PlayerMovement.FindAction("Backward", throwIfNotFound: true);
-        m_PlayerMovement_Run = m_PlayerMovement.FindAction("Run", throwIfNotFound: true);
         m_PlayerMovement_Jump = m_PlayerMovement.FindAction("Jump", throwIfNotFound: true);
+        m_PlayerMovement_WASD = m_PlayerMovement.FindAction("WASD", throwIfNotFound: true);
+        m_PlayerMovement_Run = m_PlayerMovement.FindAction("Run", throwIfNotFound: true);
         // Interraction
         m_Interraction = asset.FindActionMap("Interraction", throwIfNotFound: true);
         m_Interraction_interract = m_Interraction.FindAction("interract", throwIfNotFound: true);
@@ -296,22 +255,16 @@ public partial class @ActionMap : IInputActionCollection2, IDisposable
     // PlayerMovement
     private readonly InputActionMap m_PlayerMovement;
     private IPlayerMovementActions m_PlayerMovementActionsCallbackInterface;
-    private readonly InputAction m_PlayerMovement_Right;
-    private readonly InputAction m_PlayerMovement_Left;
-    private readonly InputAction m_PlayerMovement_Forward;
-    private readonly InputAction m_PlayerMovement_Backward;
-    private readonly InputAction m_PlayerMovement_Run;
     private readonly InputAction m_PlayerMovement_Jump;
+    private readonly InputAction m_PlayerMovement_WASD;
+    private readonly InputAction m_PlayerMovement_Run;
     public struct PlayerMovementActions
     {
         private @ActionMap m_Wrapper;
         public PlayerMovementActions(@ActionMap wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Right => m_Wrapper.m_PlayerMovement_Right;
-        public InputAction @Left => m_Wrapper.m_PlayerMovement_Left;
-        public InputAction @Forward => m_Wrapper.m_PlayerMovement_Forward;
-        public InputAction @Backward => m_Wrapper.m_PlayerMovement_Backward;
-        public InputAction @Run => m_Wrapper.m_PlayerMovement_Run;
         public InputAction @Jump => m_Wrapper.m_PlayerMovement_Jump;
+        public InputAction @WASD => m_Wrapper.m_PlayerMovement_WASD;
+        public InputAction @Run => m_Wrapper.m_PlayerMovement_Run;
         public InputActionMap Get() { return m_Wrapper.m_PlayerMovement; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -321,46 +274,28 @@ public partial class @ActionMap : IInputActionCollection2, IDisposable
         {
             if (m_Wrapper.m_PlayerMovementActionsCallbackInterface != null)
             {
-                @Right.started -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnRight;
-                @Right.performed -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnRight;
-                @Right.canceled -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnRight;
-                @Left.started -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnLeft;
-                @Left.performed -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnLeft;
-                @Left.canceled -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnLeft;
-                @Forward.started -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnForward;
-                @Forward.performed -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnForward;
-                @Forward.canceled -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnForward;
-                @Backward.started -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnBackward;
-                @Backward.performed -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnBackward;
-                @Backward.canceled -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnBackward;
-                @Run.started -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnRun;
-                @Run.performed -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnRun;
-                @Run.canceled -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnRun;
                 @Jump.started -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnJump;
                 @Jump.performed -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnJump;
                 @Jump.canceled -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnJump;
+                @WASD.started -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnWASD;
+                @WASD.performed -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnWASD;
+                @WASD.canceled -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnWASD;
+                @Run.started -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnRun;
+                @Run.performed -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnRun;
+                @Run.canceled -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnRun;
             }
             m_Wrapper.m_PlayerMovementActionsCallbackInterface = instance;
             if (instance != null)
             {
-                @Right.started += instance.OnRight;
-                @Right.performed += instance.OnRight;
-                @Right.canceled += instance.OnRight;
-                @Left.started += instance.OnLeft;
-                @Left.performed += instance.OnLeft;
-                @Left.canceled += instance.OnLeft;
-                @Forward.started += instance.OnForward;
-                @Forward.performed += instance.OnForward;
-                @Forward.canceled += instance.OnForward;
-                @Backward.started += instance.OnBackward;
-                @Backward.performed += instance.OnBackward;
-                @Backward.canceled += instance.OnBackward;
-                @Run.started += instance.OnRun;
-                @Run.performed += instance.OnRun;
-                @Run.canceled += instance.OnRun;
                 @Jump.started += instance.OnJump;
                 @Jump.performed += instance.OnJump;
                 @Jump.canceled += instance.OnJump;
+                @WASD.started += instance.OnWASD;
+                @WASD.performed += instance.OnWASD;
+                @WASD.canceled += instance.OnWASD;
+                @Run.started += instance.OnRun;
+                @Run.performed += instance.OnRun;
+                @Run.canceled += instance.OnRun;
             }
         }
     }
@@ -400,12 +335,9 @@ public partial class @ActionMap : IInputActionCollection2, IDisposable
     public InterractionActions @Interraction => new InterractionActions(this);
     public interface IPlayerMovementActions
     {
-        void OnRight(InputAction.CallbackContext context);
-        void OnLeft(InputAction.CallbackContext context);
-        void OnForward(InputAction.CallbackContext context);
-        void OnBackward(InputAction.CallbackContext context);
-        void OnRun(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
+        void OnWASD(InputAction.CallbackContext context);
+        void OnRun(InputAction.CallbackContext context);
     }
     public interface IInterractionActions
     {

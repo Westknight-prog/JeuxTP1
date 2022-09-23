@@ -7,7 +7,7 @@ public class PlayerMovementComponent : MonoBehaviour
 {
     ActionMap actionMap;
     [SerializeField] float vitesse = 10f;
-    [SerializeField] int jumpHeight = 10;
+    [SerializeField] int jumpHeight = 5;
 
     Ray ray;
 
@@ -21,22 +21,11 @@ public class PlayerMovementComponent : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (actionMap.PlayerMovement.Forward.IsPressed())
+        if (actionMap.PlayerMovement.WASD.inProgress)
         {
-            transform.Translate(Vector3.forward * Time.deltaTime * vitesse);
+            transform.Translate(actionMap.PlayerMovement.WASD.ReadValue<Vector3>() * Time.deltaTime * vitesse);
         }
-        if (actionMap.PlayerMovement.Backward.IsPressed())
-        {
-            transform.Translate(Vector3.back* Time.deltaTime * vitesse);
-        }
-        if (actionMap.PlayerMovement.Right.IsPressed())
-        {
-            transform.Translate(Vector3.right * Time.deltaTime * vitesse);
-        }
-        if (actionMap.PlayerMovement.Left.IsPressed())
-        {
-            transform.Translate(Vector3.left * Time.deltaTime * vitesse);
-        }
+       
         if (actionMap.PlayerMovement.Run.WasPressedThisFrame())
         {
             vitesse *= 1.5f;
