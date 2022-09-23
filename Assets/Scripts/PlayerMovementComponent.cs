@@ -36,11 +36,10 @@ public class PlayerMovementComponent : MonoBehaviour
         }
         if (actionMap.PlayerMovement.Jump.IsPressed())
         {
-            if(Grounded())
+            if (Grounded())
             {
                 GetComponent<Rigidbody>().AddForce(Vector3.up * jumpHeight);
             }
-                
         }
 
         bool Grounded()

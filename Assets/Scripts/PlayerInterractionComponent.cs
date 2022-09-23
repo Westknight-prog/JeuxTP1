@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerInterractionComponent : MonoBehaviour
 {
@@ -27,7 +28,8 @@ public class PlayerInterractionComponent : MonoBehaviour
                 interractibleObject.position.y - transform.position.y <= 1 &&
                 interractibleObject.position.y - transform.position.y >= -1)
             {
-                Debug.Log("test");
+                Cursor.lockState = CursorLockMode.None;
+                SceneManager.LoadScene("WinGame");
             }
         }
     }
